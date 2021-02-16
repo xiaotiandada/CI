@@ -1,0 +1,11 @@
+# 使用Nginx
+FROM nginx:alpine
+
+# label
+LABEL name="xiaotian"
+
+# 拷贝打包后的文件
+COPY dist/ /usr/share/nginx
+
+# 拷贝 nginx config
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf

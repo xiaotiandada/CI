@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    container_name: docker-vue # container name
+    image: docker-vue # image name
+    restart: always # 重启策略: 容器退出时总是重启容器
+    build:
+      context: ./ # 指定设定上下文根目录，然后以该目录为准指定Dockerfile
+      dockerfile: docker/Dockerfile-web
+    ports:
+      - "3000:3000"  # 映射端口
