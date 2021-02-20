@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>docker 1</p>
+    <p>docker 1 2 3</p>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
       check out the
